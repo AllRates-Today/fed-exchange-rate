@@ -1,0 +1,54 @@
+{
+  "name": "fed-exchange-rate",
+  "version": "1.0.1",
+  "description": "Official US Federal Reserve (United States) daily exchange rates — ~22 currencies vs USD, history since 2016. Zero-dependency Node.js/TypeScript client.",
+  "keywords": [
+    "fed",
+    "us",
+    "federal",
+    "reserve",
+    "exchange-rate",
+    "exchange-rates",
+    "currency",
+    "forex",
+    "fx",
+    "usd",
+    "central-bank",
+    "official-rates",
+    "united-states",
+    "api",
+    "typescript"
+  ],
+  "homepage": "https://allratestoday.com/central-bank-rates-api/fed/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllRates-Today/fed-exchange-rate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AllRates-Today/fed-exchange-rate/issues"
+  },
+  "license": "MIT",
+  "author": "AllRatesToday <hello@allratestoday.com> (https://allratestoday.com)",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
