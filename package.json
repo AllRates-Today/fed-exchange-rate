@@ -1,6 +1,6 @@
 {
   "name": "fed-exchange-rate",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Official US Federal Reserve (United States) weekly exchange rates — 22 currencies vs USD, history since 2016. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "fed",
