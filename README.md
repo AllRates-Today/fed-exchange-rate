@@ -70,10 +70,10 @@ const pair = await getRate('USD', 'JPY', { apiKey: 'art_live_...' });
 {
   bank: 'fed',
   name: 'US Federal Reserve',
-  rate_date: '2026-08-07',   // US Federal Reserve's own publication date
+  rate_date: '2026-09-04',   // US Federal Reserve's own publication date
   source: 'USD',
   target: 'JPY',
-  rate: 157.54,
+  rate: 156.11,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -98,9 +98,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'fed',
   name: 'US Federal Reserve',
-  rate_date: '2026-08-07',
+  rate_date: '2026-09-04',
   rates: [
-    { "base": "USD", "quote": "JPY", "type": "reference", "value": 157.54 },
+    { "base": "USD", "quote": "JPY", "type": "reference", "value": 156.11 },
     // … the rest of the published table (22 currencies vs USD)
   ],
   disclaimer: '…'
@@ -140,7 +140,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'fed-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'JPY', from: '2026-01-01', to: '2026-08-07' },
+  { source: 'USD', target: 'JPY', from: '2026-01-01', to: '2026-09-04' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -153,11 +153,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'JPY',
   from: '2026-01-01',
-  to: '2026-08-07',
+  to: '2026-09-04',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-08-07', rate: 157.54, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-04', rate: 156.11, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -170,9 +170,9 @@ Pass `{ symbol: 'JPY' }` instead of `source`/`target` to get the raw published r
 
 ## 🗺️ Currencies covered
 
-US Federal Reserve currently publishes rates covering **23 currencies** (as of the latest table):
+US Federal Reserve currently publishes rates covering **22 currencies** against the USD (as of the latest table):
 
-`AUD` · `BRL` · `CAD` · `CHF` · `CNY` · `DKK` · `EUR` · `GBP` · `HKD` · `INR` · `JPY` · `KRW` · `LKR` · `MXN` · `MYR` · `NOK` · `NZD` · `SEK` · `SGD` · `THB` · `TWD` · `USD` · `ZAR`
+🇦🇺 `AUD` · 🇧🇷 `BRL` · 🇨🇦 `CAD` · 🇨🇭 `CHF` · 🇨🇳 `CNY` · 🇩🇰 `DKK` · 🇪🇺 `EUR` · 🇬🇧 `GBP` · 🇭🇰 `HKD` · 🇮🇳 `INR` · 🇯🇵 `JPY` · 🇰🇷 `KRW` · 🇱🇰 `LKR` · 🇲🇽 `MXN` · 🇲🇾 `MYR` · 🇳🇴 `NOK` · 🇳🇿 `NZD` · 🇸🇪 `SEK` · 🇸🇬 `SGD` · 🇹🇭 `THB` · 🇹🇼 `TWD` · 🇿🇦 `ZAR`
 
 ## ⚖️ Published vs derived rates
 
@@ -235,6 +235,14 @@ getRate('USD', 'JPY', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 2016 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/fed.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/fed/latest.json`
 
 ## 🔗 Links
 
