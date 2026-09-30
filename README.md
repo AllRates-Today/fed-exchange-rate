@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'JPY', { apiKey: 'art_live_...' });
 {
   bank: 'fed',
   name: 'US Federal Reserve',
-  rate_date: '2026-09-04',   // US Federal Reserve's own publication date
+  rate_date: '2026-09-18',   // US Federal Reserve's own publication date
   source: 'USD',
   target: 'JPY',
-  rate: 156.11,
+  rate: 156.87,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -113,9 +113,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'fed',
   name: 'US Federal Reserve',
-  rate_date: '2026-09-04',
+  rate_date: '2026-09-18',
   rates: [
-    { "base": "USD", "quote": "JPY", "type": "reference", "value": 156.11 },
+    { "base": "USD", "quote": "JPY", "type": "reference", "value": 156.87 },
     // … the rest of the published table (22 currencies vs USD)
   ],
   disclaimer: '…'
@@ -155,7 +155,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'fed-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'JPY', from: '2026-01-01', to: '2026-09-04' },
+  { source: 'USD', target: 'JPY', from: '2026-01-01', to: '2026-09-18' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +168,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'JPY',
   from: '2026-01-01',
-  to: '2026-09-04',
+  to: '2026-09-18',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-04', rate: 156.11, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-18', rate: 156.87, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
