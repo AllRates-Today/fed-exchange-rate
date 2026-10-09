@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/fed-exchange-rate.svg)](https://github.com/AllRates-Today/fed-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/fed-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/JPY today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Ffed%3Fsource%3DUSD%26target%3DJPY&query=%24.rate&label=USD%2FJPY%20published%20by%20US%20Federal%20Reserve&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/fed/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Ffed%3Fsource%3DUSD%26target%3DJPY&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/fed/)
 
 **Official US Federal Reserve (the United States) weekly exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers US Federal Reserve itself prints, every week.**
 
@@ -32,6 +34,41 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full US Federal Reserve table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-02** by US Federal Reserve — 22 rates. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AUD | USD | reference | 0.6953 |
+| EUR | USD | reference | 1.1259 |
+| GBP | USD | reference | 1.3234 |
+| NZD | USD | reference | 0.5612 |
+| USD | BRL | reference | 5.2222 |
+| USD | CAD | reference | 1.4253 |
+| USD | CHF | reference | 0.8293 |
+| USD | CNY | reference | 6.7038 |
+| USD | DKK | reference | 6.6574 |
+| USD | HKD | reference | 7.847 |
+| USD | INR | reference | 96.31 |
+| USD | JPY | reference | 157.81 |
+| USD | KRW | reference | 1345.75 |
+| USD | LKR | reference | 330.55 |
+| USD | MXN | reference | 18.192 |
+| USD | MYR | reference | 4.081 |
+| USD | NOK | reference | 9.6386 |
+| USD | SEK | reference | 10.0688 |
+| USD | SGD | reference | 1.2787 |
+| USD | THB | reference | 33.58 |
+| USD | TWD | reference | 32.01 |
+| USD | ZAR | reference | 16.6685 |
+
+Source: [Official rates published by FED, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/fed/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
