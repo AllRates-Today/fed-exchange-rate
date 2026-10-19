@@ -43,32 +43,32 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-09 by US Federal Reserve — 22 rates. Updated 2026-10-19.</summary>
+<summary>Table as text: published 2026-10-16 by US Federal Reserve — 22 rates. Updated 2026-10-19.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | USD | reference | 0.6979 |
-| EUR | USD | reference | 1.1193 |
-| GBP | USD | reference | 1.3229 |
-| NZD | USD | reference | 0.5611 |
-| USD | BRL | reference | 4.979 |
-| USD | CAD | reference | 1.4269 |
-| USD | CHF | reference | 0.8308 |
-| USD | CNY | reference | 6.692 |
-| USD | DKK | reference | 6.678 |
-| USD | HKD | reference | 7.8476 |
-| USD | INR | reference | 96.73 |
-| USD | JPY | reference | 158.34 |
-| USD | KRW | reference | 1342.13 |
-| USD | LKR | reference | 330.8 |
-| USD | MXN | reference | 18.399 |
-| USD | MYR | reference | 4.083 |
-| USD | NOK | reference | 9.5665 |
-| USD | SEK | reference | 10.0039 |
-| USD | SGD | reference | 1.2811 |
-| USD | THB | reference | 33.55 |
-| USD | TWD | reference | 31.94 |
-| USD | ZAR | reference | 16.532 |
+| AUD | USD | reference | 0.695 |
+| EUR | USD | reference | 1.1231 |
+| GBP | USD | reference | 1.333 |
+| NZD | USD | reference | 0.5654 |
+| USD | BRL | reference | 5.0864 |
+| USD | CAD | reference | 1.4157 |
+| USD | CHF | reference | 0.8243 |
+| USD | CNY | reference | 6.6861 |
+| USD | DKK | reference | 6.6554 |
+| USD | HKD | reference | 7.8478 |
+| USD | INR | reference | 94.96 |
+| USD | JPY | reference | 158 |
+| USD | KRW | reference | 1334.03 |
+| USD | LKR | reference | 331.25 |
+| USD | MXN | reference | 18.5026 |
+| USD | MYR | reference | 4.079 |
+| USD | NOK | reference | 9.4474 |
+| USD | SEK | reference | 9.9189 |
+| USD | SGD | reference | 1.2798 |
+| USD | THB | reference | 33.43 |
+| USD | TWD | reference | 32.4 |
+| USD | ZAR | reference | 16.4749 |
 
 </details>
 
