@@ -47,7 +47,7 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-23 by US Federal Reserve — 22 rates. Updated 2026-10-27.</summary>
+<summary>Table as text: published 2026-10-23 by US Federal Reserve — 22 rates. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
@@ -237,6 +237,7 @@ The Federal Reserve is the central bank of the United States. Its H.10 statistic
 
 - Publisher's own page: [H.10 Foreign Exchange Rates release](https://www.federalreserve.gov/releases/h10/current/) · [www.federalreserve.gov](https://www.federalreserve.gov)
 - Publication: every week; the exact schedule, freshness status and any current delay are on the [US Federal Reserve rates page](https://allratestoday.com/central-bank-rates-api/fed/)
+- In the API: usually by **10:15 UTC** (measured over the last 7 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
