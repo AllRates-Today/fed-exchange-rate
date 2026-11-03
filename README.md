@@ -32,32 +32,32 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-23 by US Federal Reserve — 22 rates. Updated 2026-10-30.</summary>
+<summary>Table as text: published 2026-10-30 by US Federal Reserve — 22 rates. Updated 2026-11-03.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | USD | reference | 0.7037 |
-| EUR | USD | reference | 1.1199 |
-| GBP | USD | reference | 1.3375 |
-| NZD | USD | reference | 0.5705 |
-| USD | BRL | reference | 5.041 |
-| USD | CAD | reference | 1.3993 |
-| USD | CHF | reference | 0.8248 |
-| USD | CNY | reference | 6.6702 |
-| USD | DKK | reference | 6.6729 |
-| USD | HKD | reference | 7.8423 |
+| AUD | USD | reference | 0.7038 |
+| EUR | USD | reference | 1.1163 |
+| GBP | USD | reference | 1.3398 |
+| NZD | USD | reference | 0.5637 |
+| USD | BRL | reference | 5.4252 |
+| USD | CAD | reference | 1.3957 |
+| USD | CHF | reference | 0.823 |
+| USD | CNY | reference | 6.6538 |
+| USD | DKK | reference | 6.6946 |
+| USD | HKD | reference | 7.8449 |
 | USD | INR | reference | 94.94 |
-| USD | JPY | reference | 156.87 |
-| USD | KRW | reference | 1325.06 |
-| USD | LKR | reference | 332.03 |
-| USD | MXN | reference | 18.6638 |
-| USD | MYR | reference | 4.0837 |
-| USD | NOK | reference | 9.3227 |
-| USD | SEK | reference | 9.9237 |
-| USD | SGD | reference | 1.2782 |
+| USD | JPY | reference | 157.47 |
+| USD | KRW | reference | 1333.99 |
+| USD | LKR | reference | 332.55 |
+| USD | MXN | reference | 18.7942 |
+| USD | MYR | reference | 4.0555 |
+| USD | NOK | reference | 9.2111 |
+| USD | SEK | reference | 9.832 |
+| USD | SGD | reference | 1.2776 |
 | USD | THB | reference | 33.76 |
-| USD | TWD | reference | 32.54 |
-| USD | ZAR | reference | 16.5868 |
+| USD | TWD | reference | 32.59 |
+| USD | ZAR | reference | 16.7055 |
 
 </details>
 
